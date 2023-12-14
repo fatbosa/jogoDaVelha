@@ -1,0 +1,35 @@
+<html>
+<!-- cabeçalho da página com titulo, descrição e link da página de estilos -->
+<head>
+  <title>Jogo da Velha</title>
+  <meta name="description" content="Jogo da Velha">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+<!-- corpo principal da página -->
+<body class="nucleo">
+  <h1>Jogo da Velha</h2>
+    <!-- menu principal -->
+    <div class="nucleo" id="main">
+      <h4 id="textoTamanho">Tamanho da mesa: 3</h4>
+      <!-- esses botões chamam as funções que determinam o tamanho da mesa de jogo -->
+      <button onclick="v3()" class="button">3x3</button><button onclick="v4()" class="button">4x4</button><button onclick="v5()" class="button">5x5</button><button onclick="v6()" class="button">6x6</button><button onclick="v7()" class="button">7x7</button><button onclick="v8()" class="button">8x8</button><button onclick="v9()" class="button">9x9</button><button onclick="v10()" class="button">10x10</button>
+      <br>
+      <h4>Como vai Jogar?</h4>
+      <!-- estes botões determinam se o mouse vai controlar ambos os jogadores, ou se o jogador 2 joga aleatóriamente -->
+      <button onclick="pvp()" class="button">VS Jogador</button>
+      <br>
+      <button onclick="pve()" class="button">VS Computador</button>
+    </div>
+    <!-- esta div exibe o jogo em si -->
+    <div class="nucleo" id="jogo">
+      <div class="nucleo" style="margin: 5px;">
+        <h3 id="textoJogador" style="font-size: 0.9rem;">(Vez do Jogador: 1)</h2>
+      </div>
+      <!-- esta div armazena o tabuleiro -->
+      <canvas id="jogo-da-velha" class="nucleo"></canvas>
+    </div>
+    <!-- script do jogo -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
